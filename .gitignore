@@ -1,0 +1,44 @@
+
+# Node
+node_modules/
+dist/
+venv/
+.venv/
+dv/
+scraper/dv/
+__pycache__/
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+.venv/
+venv/
+*.egg-info/
+
+# Scraper raw data (large HTML snapshots)
+scraper/raw/*.html
+scraper/raw/
+
+# Build output
+docs/
+
+# Environment
+.env
+.env.local
+
+# OS
+.DS_Store
+Thumbs.db
+
+# IDE
+.vscode/
+.idea/
+*.swp
+
+# Logs
+*.log
+npm-debug.log*
+
+
+
