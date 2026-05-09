@@ -127,7 +127,7 @@ function GeoLayer({
               l.bindPopup(`
                 <div class="p-1">
                   <div class="font-semibold text-sm">${row.name}</div>
-                  <div class="text-xs text-gray-400">${isStateLevel ? 'State' : row.state_name}</div>
+                  <div class="text-xs text-gray-400">${isStateLevel ? 'State' : ('state_name' in row ? row.state_name : '')}</div>
                   <div class="mt-1 text-base font-mono font-bold" style="color:var(--accent)">
                     ${formatMetric(val, metric)}
                   </div>

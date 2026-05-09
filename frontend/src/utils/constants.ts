@@ -73,7 +73,7 @@ export function getMetricValue(
     if (caseType === 'criminal') return row.criminal_pending;
     return row.total_pending;
   }
-  return (row as Record<string, number>)[metric] ?? 0;
+  return (row as unknown as Record<string, number>)[metric] ?? 0;
 }
 
 /** D3 color scale range for choropleth — low to high severity */
